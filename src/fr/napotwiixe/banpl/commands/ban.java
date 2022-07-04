@@ -29,7 +29,7 @@ public class ban implements CommandExecutor{
 
         if(label.equalsIgnoreCase("gban")){
             if(!player.hasPermission("moderation.gban")){
-                player.sendMessage("§cVous n'avez pas la permission d'éxecuter cette commande !, vous devez être OP");
+                player.sendMessage("§cVous n'avez pas la permission d'éxecuter cette commande !, vous devez être OP!!!");
                 return false;
             }
 
