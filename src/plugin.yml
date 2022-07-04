@@ -1,0 +1,7 @@
+main: fr.napotwiixe.banpl.Main
+version: 0.1
+name: Ban-Plugin
+author: NapoTwiixe
+description: Plugin de Ban
+commands:
+  gban:

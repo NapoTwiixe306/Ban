@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Ban-Plugin:jar">
+    <output-path>$PROJECT_DIR$/../../ServMcLocal/plugins</output-path>
+    <root id="archive" name="Ban-Plugin.jar">
+      <element id="module-output" name="Ban-Plugin" />
+    </root>
+  </artifact>
+</component>
