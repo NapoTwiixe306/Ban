@@ -48,9 +48,10 @@ public class ban implements CommandExecutor{
 
                 Player target = Bukkit.getPlayer(targetName);
 
-                Inventory inv = Bukkit.createInventory(null, 18, "§bBan de : §c" + target.getName());
+                Inventory inv = Bukkit.createInventory(null, 54, "§bBan de : §c" + target.getName());
 
-                inv.setItem(0, new ItemBuilder(Material.DIAMOND_SWORD).setName("§cReach").toItemStack());
+                inv.setItem(11, new ItemBuilder(Material.DIAMOND_SWORD).setName("§cReach").toItemStack());
+                inv.setItem(12, new ItemBuilder(Material.WOOD_AXE).setName("§cKillAura").toItemStack());
 
                 player.openInventory(inv);
 

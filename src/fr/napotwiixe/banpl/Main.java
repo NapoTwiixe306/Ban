@@ -1,7 +1,7 @@
 package fr.napotwiixe.banpl;
 
 import fr.napotwiixe.banpl.commands.ban;
-import fr.napotwiixe.banpl.listener.ReportEvents;
+import fr.napotwiixe.banpl.listener.BanEvents;
 import fr.napotwiixe.banpl.manager.PlayerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
@@ -38,7 +38,7 @@ public class Main extends JavaPlugin implements Listener {
 
     private void registerEvents(){
         PluginManager pm = Bukkit.getPluginManager();
-        pm.registerEvents(new ReportEvents(), this);
+        pm.registerEvents(new BanEvents(), this);
 
     }
 }
