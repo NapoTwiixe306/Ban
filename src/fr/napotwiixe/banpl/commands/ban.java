@@ -52,6 +52,7 @@ public class ban implements CommandExecutor{
 
                 inv.setItem(11, new ItemBuilder(Material.DIAMOND_SWORD).setName("§cReach").toItemStack());
                 inv.setItem(12, new ItemBuilder(Material.WOOD_AXE).setName("§cKillAura").toItemStack());
+                inv.setItem(13, new ItemBuilder(Material.PAPER).setName("§cRacisme").toItemStack());
 
                 player.openInventory(inv);
 
