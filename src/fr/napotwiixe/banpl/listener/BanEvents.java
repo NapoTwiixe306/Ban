@@ -47,6 +47,14 @@ public class BanEvents implements Listener {
                     player.kickPlayer("Vous avez été ban pour :  §cRacisme");
                 }
                 break;
+            case BOW:
+                if (e.getCurrentItem().getItemMeta().getDisplayName().equals("§cAutoBow")){
+                    e.setCancelled(true);
+                    player.closeInventory();
+                sendToMods(e.getCurrentItem().getItemMeta().getDisplayName(), e.getInventory().getName().substring(11));
+                Bukkit.getBanList(BanList.Type.NAME).addBan(player.getName(), "§cAutoBow", null, player.getName());
+                player.kickPlayer("Vous avez été ban pour : §cAutoBow");
+                }
             default: break;
         }
     }

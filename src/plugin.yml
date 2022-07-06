@@ -5,3 +5,8 @@ author: NapoTwiixe
 description: Plugin de Ban
 commands:
   gban:
+    description: ouvre le gui de bans
+  gmute:
+    description: ouvre le gui des mutes
+  gkick:
+    description: ouvre le gui des kicks
