@@ -10,3 +10,5 @@ commands:
     description: ouvre le gui des mutes
   gkick:
     description: ouvre le gui des kicks
+  unmute:
+    description: permet de unmute un joueur

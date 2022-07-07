@@ -1,10 +1,9 @@
 package fr.napotwiixe.banpl;
 
 import fr.napotwiixe.banpl.commands.ban;
-import fr.napotwiixe.banpl.commands.mute;
+import fr.napotwiixe.banpl.commands.kick;
 import fr.napotwiixe.banpl.listener.BanEvents;
 import fr.napotwiixe.banpl.listener.KickEvents;
-import fr.napotwiixe.banpl.listener.MuteEvents;
 import fr.napotwiixe.banpl.manager.PlayerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
@@ -15,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
 
-public class Main extends JavaPlugin implements Listener {
+public class Main extends JavaPlugin implements Listener{
 
     private static Main Instance;
 
@@ -27,7 +26,9 @@ public class Main extends JavaPlugin implements Listener {
         Instance = this;
         registerEvents();
         getCommand("gban").setExecutor(new ban());
-        getCommand("gmute").setExecutor(new mute());
+        //getCommand("gmute").setExecutor(new mute());
+        getCommand("gkick").setExecutor(new kick());
+
 
     }
     public static Main getInstance() {
@@ -43,7 +44,7 @@ public class Main extends JavaPlugin implements Listener {
     private void registerEvents(){
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new BanEvents(), this);
-        pm.registerEvents(new MuteEvents(), this);
+        //pm.registerEvents(new MuteEvents(), this);
         pm.registerEvents(new KickEvents(), this);
 
     }
