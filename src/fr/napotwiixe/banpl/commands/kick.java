@@ -52,6 +52,8 @@ public class kick implements CommandExecutor{
 
 
                 inv.setItem(11, new ItemBuilder(Material.BOOKSHELF).setName("§cTrash-Talk").toItemStack());
+                inv.setItem(12, new ItemBuilder(Material.BARRIER).setName("§cInsulte-Server").toItemStack());
+                inv.setItem(13, new ItemBuilder(Material.BOOK).setName("§cPub").toItemStack());
 
                 player.openInventory(inv);
 

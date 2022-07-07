@@ -28,6 +28,24 @@ public class KickEvents implements Listener {
 
                 }
                 break;
+            case BARRIER:
+                if(e.getCurrentItem().getItemMeta().getDisplayName().equals("§cInsulte-Server")){
+                    e.setCancelled(true);
+                    player.closeInventory();
+                    sendToMods(e.getCurrentItem().getItemMeta().getDisplayName(), e.getInventory().getName().substring(11));
+                    player.kickPlayer("Vous avez été kick pour : §cInsulte-Server");
+
+                }
+                break;
+            case BOOK:
+                if(e.getCurrentItem().getItemMeta().getDisplayName().equals("§cPub")){
+                    e.setCancelled(true);
+                    player.closeInventory();
+                    sendToMods(e.getCurrentItem().getItemMeta().getDisplayName(), e.getInventory().getName().substring(11));
+                    player.kickPlayer("Vous avez été kick pour : §cPub");
+
+                }
+                break;
 
             default: break;
         }
