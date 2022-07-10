@@ -48,7 +48,7 @@ public class kick implements CommandExecutor{
 
                 Player target = Bukkit.getPlayer(targetName);
 
-                Inventory inv = Bukkit.createInventory(null, 54, "§bBan de : §c" + target.getName());
+                Inventory inv = Bukkit.createInventory(null, 54, "§bKick de : §c" + target.getName());
 
 
                 inv.setItem(11, new ItemBuilder(Material.BOOKSHELF).setName("§cTrash-Talk").toItemStack());
@@ -63,6 +63,9 @@ public class kick implements CommandExecutor{
         }
 
 
+
+
         return false;
     }
+
 }

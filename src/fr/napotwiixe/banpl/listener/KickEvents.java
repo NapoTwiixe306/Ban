@@ -3,19 +3,29 @@ package fr.napotwiixe.banpl.listener;
 
 import org.bukkit.BanList;
 import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
-public class KickEvents implements Listener {
+public class KickEvents implements Listener, CommandExecutor {
 
+    @Override
+    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        Player target = Bukkit.getPlayer(args[0]);
+        return false;
+    }
 
     @EventHandler
     public void onClick(InventoryClickEvent e){
         if(e.getCurrentItem() == null) return;
 
         Player player = (Player) e.getWhoClicked();
+
+
 
         switch(e.getCurrentItem().getType()){
 
@@ -24,7 +34,7 @@ public class KickEvents implements Listener {
                     e.setCancelled(true);
                     player.closeInventory();
                     sendToMods(e.getCurrentItem().getItemMeta().getDisplayName(), e.getInventory().getName().substring(11));
-                    player.kickPlayer("Vous avez été kick pour : §cTrash-Talk");
+
 
                 }
                 break;
