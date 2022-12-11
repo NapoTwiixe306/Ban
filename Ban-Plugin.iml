@@ -10,11 +10,22 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../ServMcLocal/spigot.jar!/" />
+          <root url="jar://$USER_HOME$/ServMcLocal/spigot.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/../../ServMcLocal/spigot.jar!/" />
+          <root url="jar://$USER_HOME$/ServMcLocal/spigot.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/java.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Downloads/java.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
